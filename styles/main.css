@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: black ;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headerImage{
+    background-image: url(../assets/images/image-profile-mobile.webp) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 174px;
+    height: 383px;
+}
+.headerNameSocial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+}
+.headerName{
+    font-size: 1.5rem;
+    width: 129px;
+    height: 32px;
+    margin-top: 20px;
+}
+.headerSocials{
+    width: 154px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerPageIntro{
+    text-align: center;
+    width: 343px;
+    height: 244px;
+    margin-top: 40px;
+}
+.headerTitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+.headerTitleName{
+border-bottom: 3px green solid;
+}
+.headerParagraph{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: grey;
+}
+.headerLink{
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border-bottom: 3px green solid;
+
+}
+
+.patternRingHeader{
+    position: absolute;
+    left: -342px;
+    top: 126px;
+    z-index: -2;
+}
+
+.line{
+    width: 90%;
+    margin-top: 2rem;
+}
+.stack{
+    width: 345px;
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.html, .css, .javaScript, .accessibility, .react, .sass {
+    display: flex;
+    flex-direction: column;
+}
+.skillName{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.skillExperience{
+    font-size: 1rem;
+    color: grey;
+}
