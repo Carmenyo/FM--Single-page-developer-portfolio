@@ -206,7 +206,6 @@ body {
   font-size: 1rem;
 }
 .buttonForm{
-  
   margin-top: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -275,7 +274,7 @@ body {
   width: 322px;
   height: 400px;
   position: relative;
-  margin-left: 30rem;
+  margin-left: 25rem;
 }
 .headerPageIntro{
  position: absolute;
@@ -291,7 +290,6 @@ body {
   width: 415px;
   font-size: 4.2rem;
   text-align: left;
-  margin-left: 2rem;
   overflow: visible;
   z-index: 1;
 
@@ -300,18 +298,76 @@ body {
   width: 24rem;
   font-weight: bold;
   text-align: left;
-  margin-left: 2rem;
   line-height: 1.7rem;
 }
 .headerLink{
-width: 12%;
+width: 15%;
 border-bottom: 3px green solid;
-margin-left: 2rem;
 }
 
 .line{
   margin-top: 4rem;
   width: 90%;
+}
+.stack{
+  width: 708px;
+  height: 451px;
+  display: grid;
+  grid-template-columns: 345px 345px;
+ text-align: left;
+ margin-left: 2rem;
+}
+.projects{
+width: 718px;
+}
+.projectsTitle{
+  margin-bottom: 2rem;
+}
+
+.projectsBox{
+  display: grid;
+  grid-template-columns: 345px 345px;
+  text-align: left;
+  gap: 1.5rem;
+}
+.contact{
+  width: 100%;
+  background-color: rgb(41, 39, 39);
+}
+.contactTitle{
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.contactParagraph{
+  width: 23.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+.contacForm{
+  width: 20rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.buttonForm{
+  width: 8.5rem;
+  font-size: 1rem;
+}
+.footer{
+  background-color: rgb(41, 39, 39);;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.footerNameSocial{
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footerSocials{
+  width: 15rem;
+  
 }
 
 }
