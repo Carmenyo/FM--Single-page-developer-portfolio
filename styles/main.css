@@ -426,5 +426,16 @@ body {
   grid-template-columns: 545px 545px;
   gap: 7rem;
  }
-
+.contact{
+  display: flex;
+  padding-top: 2rem;
+}
+.contactHeader{
+  text-align: left;
+}
+.contactParagraph{
+margin-left: 10rem;
+line-height: 1.8rem;
+width: 430px;
+}
 }
