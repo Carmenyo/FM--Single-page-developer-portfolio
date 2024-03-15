@@ -55,7 +55,7 @@ body {
   font-weight: bold;
 }
 .headerTitleName {
-  border-bottom: 3px green solid;
+  border-bottom: 3px rgb(86, 209, 86) solid;
 }
 .headerParagraph {
   margin-top: 1rem;
@@ -71,7 +71,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: white;
-  border-bottom: 3px green solid;
+  border-bottom: 3px rgb(86, 209, 86) solid;
 }
 .patternRingHeader {
   position: absolute;
@@ -132,7 +132,7 @@ body {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  border-bottom: solid 3px green;
+  border-bottom: solid 3px rgb(86, 209, 86);
 }
 .projectsBox {
   display: grid;
@@ -165,7 +165,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: green 3px solid;
+  border-bottom: rgb(86, 209, 86) 3px solid;
   margin-bottom: 2rem;
 }
 
@@ -189,41 +189,43 @@ body {
   border-bottom: 1px solid white;
   height: 43px;
 }
-.messageForm{
+.messageForm {
   height: 107px;
   border-bottom: 1px solid white;
 }
-.nameForm input, .emailForm input, .messageForm input{
+.nameForm input,
+.emailForm input,
+.messageForm input {
   width: 100%;
   height: 100%;
   outline: none;
   border: none;
-  background-color: rgb(41, 39, 39) ;
+  background-color: rgb(41, 39, 39);
   text-transform: uppercase;
   padding-left: 1rem;
 }
-::placeholder{
+::placeholder {
   font-size: 1rem;
 }
-.buttonForm{
+.buttonForm {
   margin-top: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   display: flex;
   margin-left: 13rem;
-  background-color:rgb(41, 39, 39) ;
+  background-color: rgb(41, 39, 39);
   color: white;
   border: none;
-  border-bottom: 3px green solid;
+  border-bottom: 3px rgb(86, 209, 86) solid;
   margin-bottom: 3rem;
   cursor: pointer;
 }
-.buttonForm:hover{
-  color: green;
+.buttonForm:hover {
+  color: rgb(86, 209, 86);
 }
 
 /* FOOTER */
-.footer{
+.footer {
   margin-bottom: 3rem;
   width: 154px;
   display: flex;
@@ -231,10 +233,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.footerName{
+.footerName {
   margin-bottom: 1rem;
 }
-.footerSocials{
+.footerSocials {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -242,132 +244,187 @@ body {
 
 /* TABLET */
 
-@media only screen and (min-width:768px){
-  .patternRingHeader{
+@media only screen and (min-width: 768px) {
+  .patternRingHeader {
     left: -265px;
     top: 86px;
     z-index: -2;
   }
-.headerNameSocials{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem;
-  z-index: 2;
+  .headerNameSocials {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    z-index: 2;
+    position: relative;
+  }
+  .headerSocials {
+    width: 15rem;
+    z-index: 3;
+  }
+  .headerImageText {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  .headerImage {
+    background-image: url(../assets/images/image-profile-tablet.webp);
+    background-position: top;
+    background-size: cover;
+    width: 322px;
+    height: 400px;
+    position: relative;
+    margin-left: 25rem;
+  }
+  .headerPageIntro {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerTitle {
+    width: 415px;
+    font-size: 4.2rem;
+    text-align: left;
+    overflow: visible;
+    z-index: 1;
+  }
+  .headerParagraph {
+    width: 24rem;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.7rem;
+  }
+  .headerLink {
+    width: 15%;
+    border-bottom: 3px rgb(86, 209, 86) solid;
+  }
+
+  .line {
+    margin-top: 4rem;
+    width: 90%;
+  }
+  .stack {
+    width: 708px;
+    height: 451px;
+    display: grid;
+    grid-template-columns: 345px 345px;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .projects {
+    width: 718px;
+  }
+  .projectsTitle {
+    margin-bottom: 2rem;
+  }
+
+  .projectsBox {
+    display: grid;
+    grid-template-columns: 345px 345px;
+    text-align: left;
+    gap: 1.5rem;
+  }
+  .contact {
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+  }
+  .contactTitle {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .contactParagraph {
+    width: 23.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .contacForm {
+    width: 20rem;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .buttonForm {
+    width: 8.5rem;
+    font-size: 1rem;
+  }
+  .footer {
+    background-color: rgb(41, 39, 39);
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .footerNameSocial {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footerSocials {
+    width: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .patternRingHeader {
+    left: -500px;
+    z-index: -2;
+  }
+  .headerNameSocials {
+    width: 1200px;
+  }
+  .headerImage {
+    background-image: url(../assets/images/image-profile-desktop.webp);
+    width: 445px;
+    height: 700px;
+    position: relative;
+    left: 220px;
+  }
+  .headerPageIntro {
+    left: -150px;
+  }
+  .headerTitle {
+    margin-top: 9rem;
+    width: 900px;
+    font-size: 6rem;
+  }
+  .headerLink{
+    font-size: 1.5rem;
+    width: 20%;
+  }
+  .stack {
+    grid-template-columns: 345px 345px 375px;
+    text-align: left;
+  }
+  .skillName{
+    font-size: 3rem;
+  }
+  .skillExperience{
+   font-size: 1.5rem;
+ }
+
+ .projects{
+  width: 1200px;
+ }
+ .projectsTitle{
+  font-size: 5rem;
+ }
+ .projectsLink{
+  font-size: 2rem;
+ }
+ .projectsBox{
   position: relative;
-}
-.headerSocials{
-  width: 15rem;
-  z-index: 3;
-}
-.headerImageText{
-  position: relative;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-}
-.headerImage{
-  background-image: url(../assets/images/image-profile-tablet.webp);
-  background-position: top;
-  background-size:cover ;
-  width: 322px;
-  height: 400px;
-  position: relative;
-  margin-left: 25rem;
-}
-.headerPageIntro{
- position: absolute;
- top: 0;
- left: 2rem;
- margin-right: 2rem;
- display: flex;
- flex-direction: column;
- align-items: flex-start;
-}
-
-.headerTitle{
-  width: 415px;
-  font-size: 4.2rem;
-  text-align: left;
-  overflow: visible;
-  z-index: 1;
-
-}
-.headerParagraph{
-  width: 24rem;
-  font-weight: bold;
-  text-align: left;
-  line-height: 1.7rem;
-}
-.headerLink{
-width: 15%;
-border-bottom: 3px green solid;
-}
-
-.line{
-  margin-top: 4rem;
-  width: 90%;
-}
-.stack{
-  width: 708px;
-  height: 451px;
-  display: grid;
-  grid-template-columns: 345px 345px;
- text-align: left;
- margin-left: 2rem;
-}
-.projects{
-width: 718px;
-}
-.projectsTitle{
-  margin-bottom: 2rem;
-}
-
-.projectsBox{
-  display: grid;
-  grid-template-columns: 345px 345px;
-  text-align: left;
-  gap: 1.5rem;
-}
-.contact{
+ }
+ .projectsBox{
   width: 100%;
-  background-color: rgb(41, 39, 39);
-}
-.contactTitle{
-  margin-top: 2rem;
-  font-size: 3rem;
-  font-weight: 500;
-}
-.contactParagraph{
-  width: 23.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 3rem;
-}
-.contacForm{
-  width: 20rem;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-.buttonForm{
-  width: 8.5rem;
-  font-size: 1rem;
-}
-.footer{
-  background-color: rgb(41, 39, 39);;
-  width: 100%;
-  padding-bottom: 3rem;
-}
-.footerNameSocial{
-  padding: 3rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.footerSocials{
-  width: 15rem;
-  
-}
+  grid-template-columns: 545px 545px;
+  gap: 7rem;
+ }
 
 }
